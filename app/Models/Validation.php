@@ -32,7 +32,7 @@ class Validation extends Model {
             'name' => ['required', 'string', 'unique:validation', 'min:3', 'max:20'],
             'description' => ['string', 'nullable', 'max:100'],
             'value' => ['numeric', 'nullable'],
-            'url' => ['string', 'nullable'],
+            'file' => ['file', 'mimes:txt', 'nullable'],
             'active' => ['boolean'],
         ];
         if($scenario == 'edit') {

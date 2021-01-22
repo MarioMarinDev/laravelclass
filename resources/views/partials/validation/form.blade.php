@@ -1,4 +1,4 @@
-<form action="{{ route('validation.store') }}" method="POST">
+<form action="{{ route('validation.store') }}" method="POST" enctype="multipart/form-data">
   @csrf
 
   <div class="form-group">
